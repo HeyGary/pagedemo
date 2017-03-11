@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>上合</title>
-    <style>
+    <head>
+        <meta charset="utf-8">
+        <title>上合</title>
+        <style>
         /* 样式初始化 */
         body,
         ul,
@@ -20,55 +19,331 @@
         dt,
         dd,
         input {
-            margin: 0;
-            padding: 0;
+        margin: 0;
+        padding: 0;
+        font:12px simsun;
         }
         
         img {
-            border: 0 none;
+        border: 0 none;
         }
         
         ul,
         li {
-            list-style: none;
+        list-style: none;
         }
         
         a {
-            text-decoration: none;
+        text-decoration: none;
         }
-
         .fl{
-			float: left;
+        float: left;
         }
-
         .fr{
-			float: left;
+        float: right;
         }
-
         /* 头部导航样式 */
         .header {
-            margin: 20px auto 0px;
-            height: 39px;
-            width: 980px;
-            background-color: red;
+        margin: 20px auto 0px;
+        height: 39px;
+        width: 980px;
+        /* background-color: red; */
         }
         
         input {
-            border: 0 none;
-            outline-style: none;
+        border: 0 none;
+        outline-style: none;
         }
-
-    </style>
-</head>
-
-<body>
-    <div class="header">
-        <div class="logo"><img src="images/logo.jpg" height="39" width="179" alt=""></div>
-        <div class="search"><input type="text"><input type="button"></div>
-    </div>
-
-
-
-</body>
-
+        .search{
+        width: 195px;
+        height: 30px;
+        border: 1px solid rgb(236, 236, 236)
+        }
+        input[type="text"]{
+        height: 30px;
+        width: 165px;
+        /* float: left; */
+        vertical-align: top;
+        }
+        input[type="button"]{
+        height: 30px;
+        width: 30px;
+        vertical-align: top;
+        background-image: url(./images/search2.jpg);
+        }
+        /* 头部导航完成 */
+        /* 中间导航开始 */
+        .nav{
+        height: 55px;
+        background-image: url(images/nav_bg.png);
+        border-top: 1px solid rgb(187, 187, 187);
+        }
+        .nav-con{
+        height: 55px;
+        width: 980px;
+        margin: 0 auto;
+        /* background-color: pink; */
+        }
+        .nav-con ul li{
+        float: left;
+        }
+        .nav-con ul li a{
+        display: inline-block;
+        height: 55px;
+        font: 700 16px/55px 宋体;
+        color: #000;
+        padding: 0 30px;
+        background:url(images/nav_bg-line.png)  no-repeat right;
+        }
+        .nav-con ul li a:hover{
+        color: rgb(154, 182, 9);
+        }
+        /* 头部导航结束 */
+        /* banner开始 */
+        .banner{
+        width: 980px;
+        height: 597px;
+        margin: 0 auto;
+        }
+        /* banner结束 */
+        /* mes开始 */
+        .mes{
+        height: 32px;
+        border-top: 1px solid #EFEFEF;
+        border-bottom: 1px solid #EFEFEF;
+        }
+        .mes-con{
+        height: 32px;
+        width: 980px;
+        margin: 0 auto;
+        }
+        .mes-con-l{
+        height: 32px;
+        line-height: 32px;
+        /* float: left; */
+        }
+        .mes-con-r{
+        /* float: right; */
+        height: 16px;
+        margin: 8px 0;
+        }
+        /* mes结束 */
+        /* news开始 */
+        .news{
+        width: 980px;
+        margin: 15px auto;
+        height: 226px;
+        }
+        .news-left,.news-mid,.news-right{
+        border:1px solid #E4E4E4;
+        height: 224px;
+        }
+        /*新闻左边盒子左边盒子开始*/
+        .news-left{
+        width: 310px;
+        position: relative;
+        
+        }
+        .news-mid{
+        width: 373px;
+        margin-left:12px;
+        }
+        .news-right{
+        width: 268px;
+        }
+        .pro{
+        margin: 14px 0 0 6px;
+        vertical-align: top;
+        }
+        .pro img{
+        vertical-align: middle;
+        }
+        .pro-pic{
+        position: absolute;
+        left:55px;
+        top:45px;
+        }
+        .sj-l{
+        position: absolute;
+        left: 23px;
+        bottom: 90px;
+        }
+        .sj-r{
+        position: absolute;
+        right: 23px;
+        bottom: 90px;
+        }
+        .news .news-mid{
+        width: 375px;
+        margin-left: 12px;
+        }
+        .news .news-right{
+        width: 262px;
+        margin-left: 12px;
+        }
+        .news-mid ul{
+        margin: 10px 17px 0;
+        }
+        .news-mid ul li{
+        height: 27px;
+        /* line-height: 27px; */
+        border-bottom: 1px dashed #DCDCDC;
+        }
+        .news-mid ul li a{
+        font:  12px/27px 宋体;
+        color: #000;
+        }
+        .news-mid ul li a:hover{
+        color: green;
+        }
+        .news-mid ul li .sorry{
+        font-size: 15px;
+        color: red;
+        font-weight: bold;
+        }
+        .news-right .tec{
+        margin: 10px 0 30px 28px;
+        }
+        .news-right .tec li{
+        margin-top: 7px;
+        border-left: 3px solid #7AB800;
+        padding-left:5px;
+        }
+        .news-right p{
+        margin-left:28px;
+        line-height: 18px;
+        }
+        /* news部分结束 */
+        /* footer部分开始 */
+        .footer{
+        height: 280px;
+        background: #2D2D2D;
+        border-bottom: 1px dashed #414141;
+        }
+        .footer .footer-con{
+        width: 980px;
+        margin: 0 auto;
+        }
+        .footer-con dl{
+        float: left;
+        margin-top: 20px;
+        margin-right:40px;
+        }
+        .footer-con dl dt{
+        color:#c0c0c0;
+        }
+        .footer-con dl dd{
+        color:#707070;
+        margin-top: 20px;
+        }
+        /* footer部分结束 */
+        /* 底部信息bot部分开始 */
+        .bot{
+        background: #2D2D2D;
+        height: 54px;
+        text-align: center;
+        padding-top:30px;
+        }
+        /* 底部信息bot部分结束 */
+        </style>
+    </head>
+    <body>
+        <!-- 头部 -->
+        <div class="header">
+            <div class="logo fl"><img src="images/logo.jpg" height="39" width="179" alt=""></div>
+            <div class="search fr" ><input type="text" value="请输入"><input type="button"></div>
+        </div>
+        <!-- 导航 -->
+        <div class="nav">
+            <div class="nav-con">
+                <ul>
+                    <!-- 首页智能手机平板电脑配件服务支持关于尚合 -->
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">智能手机</a></li>
+                    <li><a href="#">平板电脑</a></li>
+                    <li><a href="#">配件</a></li>
+                    <li><a href="#">服务支持</a></li>
+                    <li><a href="#">关于尚合</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <img src="images/banner.jpg"  alt="">
+        </div>
+        <!-- 信息 -->
+        <div class="mes">
+            <div class="mes-con">
+                <div class="mes-con-l fl">最新公告：尚合Aone智能手机入网证已获取工信部门审批下发。尚合官网</div>
+                <div class="mes-con-r fr">
+                    <img src="images/renren.png" height="16" width="16" alt="">
+                    <img src="images/weibo.png" height="16" width="16" alt="">
+                    <img src="images/xinlang.png" height="16" width="16" alt="">
+                    <img src="images/zone.png" height="16" width="16" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 新闻 -->
+        <div class="news">
+            <div class="news-left fl">
+                <div class="pro"><img src="images/o.jpg" height="14" width="14" alt="">
+                新品发布</div>
+                <div class="pro-pic"><img src="images/home_hot_01.png" height="149" width="205" alt=""></div>
+                <div class="sj-l"><img src="images/left.png" height="19" width="11" alt=""></div>
+                <div class="sj-r"><img src="images/right.png" height="19" width="11" alt=""></div>
+            </div>
+            <div class="news-mid fl">
+                <div class="pro"><img src="images/o.jpg" height="14" width="14" alt="">
+                新闻中心</div>
+                <ul>
+                    <li><a href="#" class="sorry">致歉公告</a></li>
+                    <li><a href="#">首批尚合Aonet已全部售馨!</a></li>
+                    <li><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+                    <li><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+                    <li><a href="#">我司通过ISO9001:2008国际质量管理体系认证</a></li>
+                    <li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+                </ul>
+            </div>
+            <div class="news-right fr">
+                <div class="pro"><img src="images/o.jpg" height="14" width="14" alt="">
+                技术与支持</div>
+                <div class="tec">
+                    <ul>
+                        <li>售后服务</li>
+                        <li>投诉与建议</li>
+                        <li>联保网点</li>
+                        <li>常见问题FAQ</li>
+                    </ul>
+                </div>
+                <p>深圳市汇聚众合科技发展有限公司<br>
+                服务热线：400-633-792</p>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-con">
+                <dl>
+                    <dt>尚合首页</dt>
+                    <dd>返回首页</dd>
+                </dl>
+                <dl>
+                    <dt>尚合首页</dt>
+                    <dd>返回首页</dd>
+                </dl>
+                <dl>
+                    <dt>尚合首页</dt>
+                    <dd>返回首页</dd>
+                </dl>
+                <dl>
+                    <dt>尚合首页</dt>
+                    <dd>返回首页</dd>
+                </dl>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="bot">
+            <p>深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司深圳市<br>
+            会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司</p>
+        </div>
+    </body>
 </html>
